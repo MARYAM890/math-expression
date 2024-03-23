@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //task1
+        var num1 = 5;
+var num2 = 3;
+var sum = num1 + num2;
+document.write("The sum of " + num1 + " and " + num2 + " is: " + sum);
+  //task2
+///Programs for subtraction, multiplication, division, and modulus:
+
+var num1 = 8;
+var num2 = 4;
+
+// Subtraction
+var difference = num1 - num2;
+document.write("The difference of " + num1 + " and " + num2 + " is: " + difference + "<br>");
+
+// Multiplication
+var product = num1 * num2;
+document.write("The product of " + num1 + " and " + num2 + " is: " + product + "<br>");
+
+// Division
+var quotient = num1 / num2;
+document.write("The quotient of " + num1 + " and " + num2 + " is: " + quotient + "<br>");
+
+// Modulus
+var remainder = num1 % num2;
+document.write("The remainder of " + num1 + " divided by " + num2 + " is: " + remainder + "<br>");
+
+  //task3
+// a. Declare a variable.
+var num;
+
+// b. Show the value of variable after declaration.
+document.write("Value after variable declaration is: " + num + "<br>");
+
+// c. Initialize the variable with some number.
+num = 5;
+
+// d. Show the initial value of the variable.
+document.write("Initial value: " + num + "<br>");
+
+// e. Increment the variable.
+num++;
+
+// f. Show the value after increment.
+document.write("Value after increment is: " + num + "<br>");
+
+// g. Add 7 to the variable.
+num += 7;
+
+// h. Show the value after addition.
+document.write("Value after addition is: " + num + "<br>");
+
+// i. Decrement the variable.
+num--;
+
+// j. Show the value after decrement.
+document.write("Value after decrement is: " + num + "<br>");
+
+// k. Show the remainder after dividing the variable’s value by 3.
+var remainder = num % 3;
+document.write("The remainder after dividing the variable's value by 3 is: " + remainder);
+// l. Show output "the remainder is zero" if the remainder is zero
+if (remainder === 0) {
+    document.write("The remainder is zero" + "<br>");
+}
+  //task4
+//Program to calculate the cost of buying 5 movie tickets:
+
+// Cost of one movie ticket
+var ticketPrice = 600;
+
+// Calculate the cost of buying 5 tickets
+var totalCost = ticketPrice * 5;
+
+// Display the result
+
+document.write("The total cost of buying 5 movie tickets is: " + totalCost + " PKR");
+  //task5
+//Program to display the multiplication table of any number:
+
+// Define the number for which multiplication table is required
+var number = 7; // Example number
+
+// Display the multiplication table of the number
+document.write("Multiplication table of " + number + ":<br>");
+for (var i = 1; i <= 10; i++) {
+    document.write(number + " x " + i + " = " + (number * i) + "<br>");
+}
+  //task6
+//Program to convert temperatures from Celsius to Fahrenheit and vice versa:
+
+// Celsius temperature
+var celsius = 25;
+
+// Convert Celsius to Fahrenheit
+var fahrenheit = (celsius * 9/5) + 32;
+
+// Display the result
+document.write(celsius + "°C is " + fahrenheit + "°F<br>");
+
+// Fahrenheit temperature
+var fahrenheit2 = 77; // Example Fahrenheit temperature
+
+// Convert Fahrenheit to Celsius
+var celsius2 = (fahrenheit2 - 32) * 5/9;
+
+// Display the result
+document.write(fahrenheit2 + "°F is " + celsius2 + "°C");
+
+  //task7
+// Shopping cart variables
+var priceItem1 = 500; // Price of item 1
+var priceItem2 = 700; // Price of item 2
+var quantityItem1 = 2; // Ordered quantity of item 1
+var quantityItem2 = 3; // Ordered quantity of item 2
+var shippingCharges = 50; // Shipping charges
+
+// Calculate total cost
+var totalCost = (priceItem1 * quantityItem1) + (priceItem2 * quantityItem2) + shippingCharges;
+
+// Display receipt
+document.write("<h2>Shopping Cart Receipt</h2>");
+document.write("<p>Price of Item 1: " + priceItem1 + " PKR</p>");
+document.write("<p>Price of Item 2: " + priceItem2 + " PKR</p>");
+document.write("<p>Quantity of Item 1: " + quantityItem1 + "</p>");
+document.write("<p>Quantity of Item 2: " + quantityItem2 + "</p>");
+document.write("<p>Shipping Charges: " + shippingCharges + " PKR</p>");
+document.write("<h3>Total Cost: " + totalCost + " PKR</h3>");
+
+
+  //task8
+// Student marks variables
+var totalMarks = 500; // Total marks
+var marksObtained = 435; // Marks obtained by student
+
+// Calculate percentage
+var percentage = (marksObtained / totalMarks) * 100;
+
+// Display percentage
+document.write("<h2>Student Marks Percentage</h2>");
+document.write("<p>Total Marks: " + totalMarks + "</p>");
+document.write("<p>Marks Obtained: " + marksObtained + "</p>");
+document.write("<h3>Percentage: " + percentage + "%</h3>");
+  //task9
+var usDollars = 10;
+var saudiRiyals = 25;
+var exchangeRateUSD = 104.80;
+var exchangeRateSAR = 28;
+
+// Convert to Pakistani Rupees
+var totalPKR = (usDollars * exchangeRateUSD) + (saudiRiyals * exchangeRateSAR);
+
+document.write("<h2>Conversion to Pakistani Rupees</h2>");
+document.write("<p>Total PKR: " + totalPKR + "</p>");
+  //task10
+var num = 10;
+var result = ((num + 5) * 10) / 2;
+
+document.write("<h2>Arithmetic Sequence</h2>");
+document.write("<p>Result: " + result + "</p>");
+
+  //task11
+var currentYear = new Date().getFullYear();
+var birthYear = 1990; // Example birth year
+var possibleAge1 = currentYear - birthYear;
+var possibleAge2 = possibleAge1 - 1;
+
+document.write("<h2>Age Calculator</h2>");
+document.write("<p>They are either " + possibleAge1 + " or " + possibleAge2 + " years old.</p>");
+
+  //task12
+var radius = 5;
+var circumference = 2 * Math.PI * radius;
+var area = Math.PI * radius * radius;
+
+document.write("<h2>Geometrizer</h2>");
+document.write("<p>The circumference is " + circumference.toFixed(2) + "</p>");
+document.write("<p>The area is " + area.toFixed(2) + "</p>");
+
+  //task13
+var favoriteSnack = "Chocolate";
+var currentAge = 30; // Example current age
+var maxAge = 80; // Example maximum age
+var amountPerDay = 2; // Example amount per day
+
+var yearsRemaining = maxAge - currentAge;
+var totalSnacksNeeded = yearsRemaining * 365 * amountPerDay;
+
+document.write("<h2>Lifetime Supply Calculator</h2>");
+document.write("<p>You will need " + totalSnacksNeeded + " " + favoriteSnack + " to last you until the ripe old age of " + maxAge + "</p>");
+    </script>
+</body>
+</html>
